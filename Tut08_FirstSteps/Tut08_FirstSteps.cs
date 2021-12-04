@@ -18,10 +18,10 @@ namespace FuseeApp
     [FuseeApplication(Name = "Tut08_FirstSteps", Description = "Yet another FUSEE App.")]
     public class Tut08_FirstSteps : RenderCanvas
     {
-
+        //<---Build---->
         private SceneContainer _scene;
         private SceneRendererForward _sceneRenderer;
-        private Transform[] _cubeTransform = new Transform[3];
+        private Transform[] _cubeTransform = new Transform[7];
         private float _camAngle;
 
         // Init is called on startup. 
@@ -29,28 +29,16 @@ namespace FuseeApp
         {
             // Set the clear color for the backbuffer to "greenery"
             RC.ClearColor = new float4(1f, 1f, 1f, 1f);
-            /*
-            // Create a scene with a cube
-            // The three components: one Transform, one ShaderEffect (blue material) and the Mesh
-            _cubeTransform = new Transform { Scale = new float3(1, 1, 1), Translation = new float3(0f, 0f, 0f) };
-            _cubeTransform.Rotation = new float3(20, 0, 0);
-
-            var cubeShader = MakeEffect.FromDiffuseSpecular((float4)ColorUint.YellowGreen);
-            var cubeMesh = SimpleMeshes.CreateCuboid(new float3(10f, 10f, 10f));
-
-            // Assemble the cube node containing the three components
-            var cubeNode = new SceneNode();
-            cubeNode.Components.Add(_cubeTransform);
-            cubeNode.Components.Add(cubeShader);
-            cubeNode.Components.Add(cubeMesh);
-            */
-
-
-            // Create the scene containing the cube as the only object -->brute force
+            
+            // Create the scene containing the cubes as the only objects
             _scene = new SceneContainer();
             _scene.Children.Add(cubes(((float4)ColorUint.YellowGreen), (new float3(1f, 1f, 1f)), (new float3(0f, 0f, 0f)), 0));
-            _scene.Children.Add(cubes(((float4)ColorUint.Greenery), (new float3(1f, 0.5f, 1f)), (new float3(0f, 0f, 50f)), 1));
-            _scene.Children.Add(cubes(((float4)ColorUint.BlanchedAlmond), (new float3(0.5f, 0.5f, 0.5f)), (new float3(50f, 0f, 0f)), 2));
+            _scene.Children.Add(cubes(((float4)ColorUint.Blue), (new float3(1f, 0.5f, 1f)), (new float3(0f, 0f, 50f)), 1));
+            _scene.Children.Add(cubes(((float4)ColorUint.DarkRed), (new float3(0.5f, 0.5f, 0.5f)), (new float3(50f, 0f, 0f)), 2));
+            _scene.Children.Add(cubes(((float4)ColorUint.Red), (new float3(0.5f, 0.5f, 0.5f)), (new float3(50f, 0f, 0f)), 3));
+            _scene.Children.Add(cubes(((float4)ColorUint.DarkRed), (new float3(0.5f, 0.5f, 0.5f)), (new float3(50f, 0f, 0f)), 4));
+            _scene.Children.Add(cubes(((float4)ColorUint.Red), (new float3(0.5f, 0.5f, 0.5f)), (new float3(50f, 0f, 0f)), 5));
+    
             // Create a scene renderer holding the scene above
             _sceneRenderer = new SceneRendererForward(_scene);
         }
@@ -62,18 +50,20 @@ namespace FuseeApp
 
             // Clear the backbuffer
             RC.Clear(ClearFlags.Color | ClearFlags.Depth);
+
             //<---ANIMATION---->
             //Animate CamRotation
-            _camAngle += 90f * M.Pi / 180.0f * DeltaTime;
+            _camAngle += 60f * M.Pi / 200.0f * DeltaTime;
 
             _cubeTransform[0].Translation = new float3(0, 5 * M.Sin(3 * TimeSinceStart - 120), 30);
             _cubeTransform[1].Translation = new float3(0, 3 * M.Sin(4 * TimeSinceStart + 50), 0);
             _cubeTransform[2].Translation = new float3(10, 1 * M.Sin(2 * TimeSinceStart), 10);
+            _cubeTransform[3].Translation = new float3(10, 1 * M.Sin(2 * TimeSinceStart), 20);
+            _cubeTransform[4].Translation = new float3(-10, 5 * M.Sin(2 * TimeSinceStart), 10);
+            _cubeTransform[5].Translation = new float3(-10, 3 * M.Sin(2 * TimeSinceStart), 20);           
 
 
-
-
-            RC.View = float4x4.CreateTranslation(0, 0, 50) * float4x4.CreateRotationY(_camAngle);
+            RC.View = float4x4.CreateTranslation(0, 0, 65) * float4x4.CreateRotationY(_camAngle);
             // Create the scene containing the cube as the only object
             _sceneRenderer.Render(RC);
 
@@ -97,7 +87,6 @@ namespace FuseeApp
         }
 
 
-        //myPlayground --> create won Objekt?
         public SceneNode cubes(float4 color, float3 scale, float3 trans, int index)
         {
             // Create a scene with a cube
