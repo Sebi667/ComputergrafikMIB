@@ -1,0 +1,12 @@
+C:\Users\Palad\Documents\GitHub\ComputergrafikMIB\Tut09_HierarchyAndInput\bin\Debug\Tut09_HierarchyAndInput.deps.json
+C:\Users\Palad\Documents\GitHub\ComputergrafikMIB\Tut09_HierarchyAndInput\bin\Debug\Tut09_HierarchyAndInput.dll
+C:\Users\Palad\Documents\GitHub\ComputergrafikMIB\Tut09_HierarchyAndInput\bin\Debug\ref\Tut09_HierarchyAndInput.dll
+C:\Users\Palad\Documents\GitHub\ComputergrafikMIB\Tut09_HierarchyAndInput\bin\Debug\Tut09_HierarchyAndInput.pdb
+C:\Users\Palad\Documents\GitHub\ComputergrafikMIB\Tut09_HierarchyAndInput\obj\Debug\Tut09_HierarchyAndInput.csproj.AssemblyReference.cache
+C:\Users\Palad\Documents\GitHub\ComputergrafikMIB\Tut09_HierarchyAndInput\obj\Debug\Tut09_HierarchyAndInput.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Palad\Documents\GitHub\ComputergrafikMIB\Tut09_HierarchyAndInput\obj\Debug\Tut09_HierarchyAndInput.AssemblyInfoInputs.cache
+C:\Users\Palad\Documents\GitHub\ComputergrafikMIB\Tut09_HierarchyAndInput\obj\Debug\Tut09_HierarchyAndInput.AssemblyInfo.cs
+C:\Users\Palad\Documents\GitHub\ComputergrafikMIB\Tut09_HierarchyAndInput\obj\Debug\Tut09_HierarchyAndInput.csproj.CoreCompileInputs.cache
+C:\Users\Palad\Documents\GitHub\ComputergrafikMIB\Tut09_HierarchyAndInput\obj\Debug\Tut09_HierarchyAndInput.dll
+C:\Users\Palad\Documents\GitHub\ComputergrafikMIB\Tut09_HierarchyAndInput\obj\Debug\ref\Tut09_HierarchyAndInput.dll
+C:\Users\Palad\Documents\GitHub\ComputergrafikMIB\Tut09_HierarchyAndInput\obj\Debug\Tut09_HierarchyAndInput.pdb
