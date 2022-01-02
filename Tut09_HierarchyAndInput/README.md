@@ -8,17 +8,3 @@ Kranksteuerung per Numbpad:
 2. Arm wird per 9/3 bewegt 
 Root wird per 4/6 gedreht
 Greifhaken wird mit 5 Geöffnen/Geschloßen 
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
