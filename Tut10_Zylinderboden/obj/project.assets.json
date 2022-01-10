@@ -2973,11 +2973,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Palad\\Documents\\GitHub\\ComputergrafikMIB\\Tut09_HierarchyAndInput\\Tut09_HierarchyAndInput.csproj",
-      "projectName": "Tut09_HierarchyAndInput",
-      "projectPath": "C:\\Users\\Palad\\Documents\\GitHub\\ComputergrafikMIB\\Tut09_HierarchyAndInput\\Tut09_HierarchyAndInput.csproj",
+      "projectUniqueName": "C:\\Users\\Palad\\Desktop\\Tut10_Zylinderboden\\Tut10_Mesh.csproj",
+      "projectName": "Tut10_Mesh",
+      "projectPath": "C:\\Users\\Palad\\Desktop\\Tut10_Zylinderboden\\Tut10_Mesh.csproj",
       "packagesPath": "C:\\Users\\Palad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Palad\\Documents\\GitHub\\ComputergrafikMIB\\Tut09_HierarchyAndInput\\obj\\",
+      "outputPath": "C:\\Users\\Palad\\Desktop\\Tut10_Zylinderboden\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Palad\\AppData\\Roaming\\NuGet\\NuGet.Config"
