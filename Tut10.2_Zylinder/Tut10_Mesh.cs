@@ -49,7 +49,7 @@ namespace FuseeApp
 
                             // MESH COMPONENT
                             //Contains the Components: (Size, Hight, Segments)
-                            SimpleMeshes.CreateCylinder(10,15,22)
+                            SimpleMeshes.CreateCylinder(10,15,22)   //<- Change parameters to reshape the cylinder
                         }
                     },
                 }
@@ -61,7 +61,7 @@ namespace FuseeApp
         {
             // Set the clear color for the backbuffer to white (100% intensity in all color channels R, G, B, A).
             RC.ClearColor = new float4(0.8f, 0.9f, 0.7f, 1);
-            RC.SetRenderState(RenderState.FillMode, (uint)FillMode.Wireframe, true); //<- Command for Wireframe-View
+            RC.SetRenderState(RenderState.FillMode, (uint)FillMode.Wireframe, true); //<- Command for Wireframe-View (take out to activate normal fill-mode)
             _scene = CreateScene();
 
             // Create a scene renderer holding the scene above
